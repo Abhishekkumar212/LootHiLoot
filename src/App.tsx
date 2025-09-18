@@ -18,10 +18,7 @@ import {
   doc,
   query,
   orderBy,
-  runTransaction,
-  writeBatch,
-  getDocs,
-  setDoc
+  runTransaction
 } from 'firebase/firestore';
 
 import type { Deal, User, FirestoreUser } from './types';
