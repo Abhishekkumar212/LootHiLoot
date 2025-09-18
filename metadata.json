@@ -1,0 +1,5 @@
+{
+  "name": "Loot Deals",
+  "description": "An e-commerce information website that displays affiliate product deals, separating them into 'Live' and 'Expired' categories. Users can track orders and admins can manage deals.",
+  "requestFramePermissions": []
+}
