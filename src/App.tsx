@@ -53,6 +53,7 @@ const App: React.FC = () => {
           name: currentUser.displayName || 'User',
           email: currentUser.email || '',
         });
+        // Correctly access environment variables in Vite
         setIsAdmin(currentUser.email === import.meta.env.VITE_ADMIN_EMAIL);
       } else {
         setUser(null);
