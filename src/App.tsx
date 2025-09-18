@@ -56,8 +56,7 @@ const App: React.FC = () => {
           name: currentUser.displayName || 'User',
           email: currentUser.email || '',
         });
-        // Fix: Replaced import.meta.env with process.env to resolve TypeScript error.
-        setIsAdmin(currentUser.email === process.env.VITE_ADMIN_EMAIL);
+        setIsAdmin(currentUser.email === import.meta.env.VITE_ADMIN_EMAIL);
       } else {
         setUser(null);
         setIsAdmin(false);
